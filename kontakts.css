@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #351010;
+    color: rgb(234, 220, 202);
+}
+.navigation{
+    background-color: rgb(234, 220, 202);
+    width: 5%;
+    height: 100%;
+    padding-right: 1%;
+    border-radius: 0% 50% 300% 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s cubic-bezier(.9, 0, .33, 1);
+}
+.icon{
+    cursor: pointer;
+    width: 55px;
+    height: 44px;
+    position: relative;
+    top: 5%;
+    left: 37%;
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+.line{
+    width: 55px;
+    height: 2px;
+    background: #052007;
+    position: absolute;
+    transform: rotate(0);
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+.top{
+    top: 10px;
+}
+.middle{
+    top: 20px;
+}
+.bottom{
+    top: 30px;
+}
+.logo_menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40%;
+}
+.logo{
+    transition: 0.4s;
+    position: absolute;
+    width: 75px;
+    border: 3px solid black;
+    border-radius: 27%;
+    left: 30%;
+}
+.logo:hover{
+    width: 80px;
+    box-shadow: 0 0 10px rgb(159, 0, 0);
+    transition: 0.2s;
+}
+.menu{
+    margin-top: 60%;
+    transform: rotateY(-90deg) translateX(-300px);
+    transition: all 800ms cubic-bezier(.9, 0, .33, 1);
+}
+nav .menu li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #351010;
+    font-size: 35px;
+}
+nav a:hover{
+    text-shadow: 0 0 10px rgb(159, 0, 0);
+}
+.nav_open{
+    width: 350px;
+    border-radius: 0% 1% 1% 0%;
+}
+.nav_open .icon{
+    left: 80%;
+}
+.nav_open .top{
+    top: 20px;
+    transform: rotate(45deg);
+}
+.nav_open .middle{
+    width: 0;
+}
+.nav_open .bottom{
+    width: 55px;
+    top: 21px;
+    transform: rotate(-45deg);
+}
+.nav_open .logo_menu .logo{
+    left: 30%;
+    width: 150px;
+}
+.nav_open .logo_menu .logo:hover{
+    width: 155px;
+    box-shadow: 0 0 10px rgb(159, 0, 0);
+    transition: 0.2s;
+}
+.nav_open .menu{
+    transform: rotateY(0) translateX(0);
+}
+main {
+    background-color: #351010;
+    color: rgb(234, 220, 202);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+.contact {
+    text-align: center;
+}
+.contact h1 {
+    margin-bottom: 20px;
+    font-size: 42px;
+}
+.contact p {
+    margin: 8px 0;
+    font-size: 24px;
+}
+.contact p:hover {
+    color: #f5d7b2;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgb(159, 0, 0)
+}
+.contact a{
+    text-decoration: none;
+    color: rgb(234, 220, 202);
+}
