@@ -16,6 +16,7 @@ body{
     top: 0;
     left: 0;
     transition: all 0.5s cubic-bezier(.9, 0, .33, 1);
+    position: fixed;
 }
 .icon{
     cursor: pointer;
@@ -120,11 +121,13 @@ nav a:hover{
 main{
     display: flex;
     justify-content: end;
+    padding-right: 200px;
 }
 .me{
     font-size: 28px;
     margin: 100px 5% 0;
     margin-bottom: 40px;
+    line-height: 1.5;
 }
 h1{
     text-align: center;
@@ -135,26 +138,57 @@ h1{
     margin: 20px auto;    
     width: 300px;         
     border-radius: 50%;   
-    border: 5px solid rgb(234, 220, 202);
-    box-shadow: 0 0 10px rgb(234, 220, 202);
+    border: 5px solid rgba(46, 54, 89, 1);
+    box-shadow: 0 0 15px rgb(91, 107, 176);
 }
-.timeline{
-
+.timeline {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+.skills{
+    padding-top: 200px;
 }
 .timeline1, .timeline2{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 .timeline1{
     gap: 150px;
 }
-.item_edu{
+.timeline2{
+    gap: 70px;
+}
+.item_edu, .item_sk{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(234, 220, 202);
+    position: relative;
+    background: #5E7AB4;
+    background: linear-gradient(90deg,rgba(94, 122, 180, 1) 0%, rgba(46, 54, 89, 1) 71%);
     border-radius: 50%;
     width: 60px;
     height: 60px;
+}
+.item_edu:not(:last-child)::before{
+    content:"";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background-color: rgba(46, 54, 89, 1);
+    left: 60px;
+}
+.item_edu::after, .item_sk::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 75px;
+    text-align: center;
+    font-size: 18px;
+    width: 130px;
+    line-height: 1.5;
 }
