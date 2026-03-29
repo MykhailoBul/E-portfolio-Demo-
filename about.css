@@ -175,6 +175,10 @@ h2{
     width: 60px;
     height: 60px;
 }
+.item_sk{
+    width: 85px;
+    height: 85px;
+}
 .item_edu:not(:last-child)::before{
     content:"";
     position: absolute;
@@ -191,4 +195,13 @@ h2{
     font-size: 18px;
     width: 130px;
     line-height: 1.5;
+}
+ion-icon, svg{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    color: rgb(199, 215, 225);
+}
+.item_sk::after{
+    padding-top: 20px;
 }
