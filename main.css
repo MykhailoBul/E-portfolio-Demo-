@@ -114,11 +114,16 @@ nav a:hover{
 .nav_open .menu{
     transform: rotateY(0) translateX(0);
 }
-.block{
+.block_open{
     display: flex;
     justify-content: end;
     align-items: center;
     min-height: 100vh;
+    max-width: 85%;
+}
+.block{
+    transition: 0.5s;
+    max-width: 90%;
 }
 .block1{
     width: 88%;
